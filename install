@@ -113,7 +113,7 @@ if [ -e $PREFIX/bin/shell ]; then
 cd $HOME
 sed -i "4a source $HOME/shell/shell" $PREFIX/etc/bash.bashrc
 cp shell/shell /data/data/com.termux/files/usr/bin
-rm -rf $PREFIX/usr/etc/motd
+rm -rf /data/data/com.termux/files/usr/etc/motd
 sleep 10
 echo
 echo
