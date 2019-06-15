@@ -113,6 +113,7 @@ if [ -e $PREFIX/bin/shell ]; then
 cd $HOME
 sed -i "4a source $HOME/shell/shell" $PREFIX/etc/bash.bashrc
 cp shell/shell /data/data/com.termux/files/usr/bin
+rm -rf $PREFIX/usrc/etc/motd
 sleep 10
 echo
 echo
@@ -127,5 +128,5 @@ echo
 printf "$G"
 echo " ::::::::::::: INSTALACION FINISHED ::::::::::::::::::"
 echo " :::::::::::::::::::: BY LX ::::::::::::::::::::::::::"
-echo
+echo "CIERRE Y ABRA NUEVAMENTE"
 sleep 10
