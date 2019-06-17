@@ -127,7 +127,7 @@ if [ -e $PREFIX/bin/shell ]; then
 	echo
 cd $HOME
 sed -i "3a clear" $PREFIX/etc/bash.bashrc
-sed -i "4a source $HOME/shell" $PREFIX/etc/bash.bashrc
+sed -i "4a source $HOME/shell/shell" $PREFIX/etc/bash.bashrc
 cp shell/shell /data/data/com.termux/files/usr/bin
 rm -rf /data/data/com.termux/files/usr/etc/motd
 sleep 10
