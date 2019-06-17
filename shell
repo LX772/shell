@@ -22,12 +22,17 @@ function reset {
 read $i cm;do
 case $cm in
 	mash)
-		printf "use rooted for download sudo and use root\nuse sudo to enter into the root shell.\nuse shell to enter into shell no root.\nuse actualizar to do pkg update && pkg upgrade.\nuse report to report bugs!.\nuse exit to exit the shell\n"
+		printf "usa udapted para actualizar la shell\nuse rooted for download sudo and use root\nuse sudo to enter into the root shell.\nuse shell to enter into shell no root.\nuse actualizar to do pkg update && pkg upgrade.\nuse report to report bugs!.\nuse exit to exit the shell\n"
 		reset
 		;;
 	clear)
 		echo $(clear)
 		banner
+		reset
+		;;
+	udapted)
+		cd $HOME/shell
+		git pull
 		reset
 		;;
 
@@ -102,8 +107,7 @@ case $rt in
 	info)
 		printf "$r CREATOR $g TGD @TheGreenDash\n$r MODDER AND CREDIT TO $g LX https://t.me/Minattto\n"
 		sureset
-		;;
-		
+		;;		
 
 	sudo)
 		reset
